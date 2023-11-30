@@ -1,5 +1,5 @@
 {
-  description = "A very basic flake";
+  description = "Sway (window manager) configured by Marcus";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
