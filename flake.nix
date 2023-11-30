@@ -9,6 +9,7 @@
     rofi.url = "github:marcuswhybrow/rofi";
     volume.url = "github:marcuswhybrow/volume";
     brightness.url = "github:marcuswhybrow/brightness";
+    waybar.url = "github:marcuswhybrow/waybar";
   };
 
   outputs = inputs: let 

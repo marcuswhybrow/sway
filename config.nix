@@ -5,6 +5,7 @@
   rofi = "${inputs.rofi.packages.x86_64-linux.rofi}/bin/rofi";
   volume = "${inputs.volume.packages.x86_64-linux.volume}/bin/volume";
   brightness = "${inputs.brightness.packages.x86_64-linux.brightness}/bin/brightness";
+  waybar = "${inputs.waybar.packages.x86_64-linux.waybar}/bin/waybar";
   firefox = "${pkgs.firefox}/bin/firefox";
   grimshot = "${pkgs.sway-contrib.grimshot}/bin/grimshot";
   gsound-play = "${pkgs.gsound}/bin/gsound-play";
@@ -130,10 +131,7 @@ in ''
   gaps inner 10
 
   bar {
-    swaybar_command waybar
-    mode hide
-    hidden_state hide
-    modifier Mod1
+    swaybar_command ${waybar}
   }
   
   exec "${dbus-update-activation-environment} DISPLAY WAYLAND_DISPLAY SWAYSOCK XDG_CURRENT_DESKTOP XDG_SESSION_TYPE; systemctl --user start sway-session.target"
