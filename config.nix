@@ -128,6 +128,8 @@ in ''
     bindsym l resize grow width 10 px
   }
 
+  gaps top 20
+  gaps outer 10
   gaps inner 10
 
   bar {
